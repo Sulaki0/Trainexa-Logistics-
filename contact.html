@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Trainexa Logistics</title>
+    <meta name="description" content="Get in touch with Trainexa Logistics. Contact us for quotes, inquiries, and logistics solutions.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-cube"></i>
+                    <span>Trainexa</span>
+                </a>
+            </div>
+            <nav aria-label="Main Navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Media</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-hero">
+            <div class="page-hero-overlay"></div>
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with our team for quotes and inquiries</p>
+            </div>
+        </section>
+
+        <section class="contact-section section-padding">
+            <div class="container">
+                <div class="contact-container">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <span class="section-tag">Get in Touch</span>
+                        <h2>We'd Love to Hear From You</h2>
+                        <p>
+                            Have questions about our logistics services? Need a quote for your supply chain needs? 
+                            Our team is ready to assist you. Reach out to us through any of the following channels.
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Our Location</h4>
+                                    <p>123 Logistics Drive,<br>Sydney, NSW 2000, Australia</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+61 (0) 800 123 456</p>
+                                    <p>Mon-Fri: 8:00am - 6:00pm</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>info@trainexalogistics.com</p>
+                                    <p>sales@trainexalogistics.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fas fa-globe"></i>
+                                <div>
+                                    <h4>Follow Us</h4>
+                                    <div class="social-links-small">
+                                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="name">Full Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                                <span id="name-error" class="error-message"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                                <span id="email-error" class="error-message"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                                <span id="phone-error" class="error-message"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Service Interested In</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service...</option>
+                                    <option value="air-freight">Air Freight</option>
+                                    <option value="ocean-freight">Ocean Freight</option>
+                                    <option value="ground-transport">Ground Transport</option>
+                                    <option value="warehousing">Warehousing &amp; Fulfillment</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span id="service-error" class="error-message"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message <span class="required">*</span></label>
+                                <textarea id="message" name="message" placeholder="Tell us about your logistics needs..." required></textarea>
+                                <span id="message-error" class="error-message"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                        
+                        <div id="success-message" class="success-message">
+                            <i class="fas fa-check-circle"></i>
+                            <strong>Thank You!</strong>
+                            Your message has been sent successfully. Our Trainexa team will respond within 24 hours.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4><i class="fas fa-cube"></i> Trainexa Logistics</h4>
+                <p>Connecting Commerce, Delivering Excellence</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Media Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html#air-freight">Air Freight</a></li>
+                    <li><a href="services.html#ocean-freight">Ocean Freight</a></li>
+                    <li><a href="services.html#ground-transport">Ground Transport</a></li>
+                    <li><a href="services.html#warehousing">Warehousing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i> info@trainexalogistics.com</p>
+                <p><i class="fas fa-phone"></i> +61 (0) 800 123 456</p>
+                <p><i class="fas fa-location-dot"></i> Sydney, Australia</p>
+                <p><i class="fas fa-clock"></i> Mon-Fri: 8am - 6pm</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Trainexa Logistics. Designed by Sulakshya Acharya | Student ID: 20037363</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
